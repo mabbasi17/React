@@ -4,8 +4,9 @@ import './card.scss'
 function MyCard({ cardData }) {
 
     return (
-        <Box  mt={2} px={2}>
-            <Card>
+        <Box  mt={2} px={2} maxWidth="xs">
+            <Card raised p={5}>
+                
                 <CardContent>
                     <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} >
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>

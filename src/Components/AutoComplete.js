@@ -6,7 +6,11 @@ export default function AutoComplete({ cat, setCat }) {
   return (
     <Box>
       <Autocomplete
+        size='small'
         value={cat}
+        isOptionEqualToValue={(option, value) =>
+                  option.iso === value.iso
+                }
         onChange={(event, newValue) => {
           setCat(newValue.value)
         }}
@@ -17,12 +21,12 @@ export default function AutoComplete({ cat, setCat }) {
         ]}
         renderInput={(params) => (
           <TextField
+               color='secondary'
             placeholder="Filter Products"
             {...params}
-            label="Choose a product"
+            label="Choose Category"
             inputProps={{
               ...params.inputProps,
-              autoComplete: 'new-password', // disable autocomplete and autofill
             }}
           />
         )}

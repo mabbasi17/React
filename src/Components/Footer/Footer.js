@@ -3,10 +3,10 @@ import React from 'react'
 
 function Footer() {
     return (
-        <Box display={'flex'} sx={{ flexGrow: 5, position: 'fixed', width: '83%', padding: '0px 15px', height: '30px', bottom: 0, background: '#333', color: '#fff' }} justifyContent={'space-between'} alignItems={'center'}>
+        <Box display={'flex'} sx={{  position: 'fixed', width:'100%', padding: '10px', height: '30px', bottom: 0, background: '#333', color: '#fff' }} justifyContent={'space-between'} alignItems={'center'}>
 
-            <h4>CopyRights</h4>
-            <h4>Logo</h4>
+            <p>CopyRights</p>
+            <p>Logo</p>
 
         </Box >
     )

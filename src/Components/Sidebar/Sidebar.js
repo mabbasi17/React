@@ -7,7 +7,7 @@ import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import Divider from '@mui/material/Divider'
 import QrCodeScannerOutlinedIcon from '@mui/icons-material/QrCodeScannerOutlined'
-import { Avatar, Switch, Typography } from '@mui/material'
+import { Avatar, Button, Switch, Typography } from '@mui/material'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 import DashboardIcon from '@mui/icons-material/Dashboard'
 
@@ -48,6 +48,8 @@ function Sidebar() {
         </List>
         <Divider />
         <Switch />
+        <Divider />
+        <Button href="/signup">Signup</Button>
       </Box>
     </Box>
   )
